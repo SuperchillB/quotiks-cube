@@ -1,4 +1,7 @@
 # quotiks-cube
+
+(September 2017)
+
 [Quotik's Cube: a random quote machine](https://superchillb.github.io/quotiks-cube/)
 
 A cubic quote generator I built before joining BeCode. 
