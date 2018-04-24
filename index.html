@@ -1,0 +1,90 @@
+<!--
+Idea #1: cube in the centre, click on button for random quote => cube is shuffled
+Idea #2: div in the middle with title, when you click on it ("discover") it slides up and reveals quote inside
+Idea #3: welcome/title on landing, slides down when "discover" is clicked
+Idea #4: make background dark but put a big quote icon filled in white (or any light colour) with div inside for quotes
+Idea #5: div in middle, background colour slides left and new background colour with new quote appears
+-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+  	<title>Random Quote Machine, by ㅅuper ㄷhill designs</title>
+  	<link rel="stylesheet" type="text/css" href="main.css">
+  	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  	<link href="https://fonts.googleapis.com/css?family=Anaheim|Lekton:400,700|Zilla+Slab:300,700|Cutive+Mono" rel="stylesheet">
+  </head>
+  <body>
+
+  <div class="quotikWrapper">
+  	<div class="quotik">
+  		<svg viewBox="0 0 1976 1411" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="1.5"><path d="M1695.968 80.48c0-47.85-31.9-71.818-71.2-53.482L92.04 742.088c-39.3 18.335-71.206 72.07-71.206 119.92v173.41c0 47.86 31.906 71.825 71.206 53.49l1532.728-715.09c39.3-18.336 71.2-72.068 71.2-119.928V80.48z" fill="#484646"/><path d="M1714.417 80.48c0-47.85-31.9-71.818-71.2-53.482L110.49 742.088c-39.3 18.335-71.207 72.07-71.207 119.92v173.41c0 47.86 31.906 71.825 71.206 53.49l1532.727-715.09c39.3-18.336 71.2-72.068 71.2-119.928V80.48z" fill="#484646"/><path d="M1732.865 80.48c0-47.85-31.9-71.818-71.2-53.482L128.937 742.088c-39.3 18.335-71.206 72.07-71.206 119.92v173.41c0 47.86 31.907 71.825 71.207 53.49l1532.728-715.09c39.3-18.336 71.2-72.068 71.2-119.928V80.48z" fill="#484646"/><path d="M1751.313 80.48c0-47.85-31.9-71.818-71.2-53.482L147.385 742.088c-39.3 18.335-71.206 72.07-71.206 119.92v173.41c0 47.86 31.905 71.825 71.205 53.49l1532.728-715.09c39.3-18.336 71.2-72.068 71.2-119.928V80.48z" fill="#484646"/><path d="M1769.76 80.48c0-47.85-31.9-71.818-71.2-53.482L165.834 742.088c-39.3 18.335-71.206 72.07-71.206 119.92v173.41c0 47.86 31.906 71.825 71.206 53.49l1532.728-715.09c39.3-18.336 71.2-72.068 71.2-119.928V80.48z" fill="#484646"/><path d="M1788.21 80.48c0-47.85-31.9-71.818-71.2-53.482L184.282 742.088c-39.3 18.335-71.206 72.07-71.206 119.92v173.41c0 47.86 31.906 71.825 71.206 53.49l1532.728-715.09c39.3-18.336 71.2-72.068 71.2-119.928V80.48z" fill="#484646"/><path d="M1806.658 80.48c0-47.85-31.9-71.818-71.2-53.482L202.73 742.088c-39.3 18.335-71.206 72.07-71.206 119.92v173.41c0 47.86 31.906 71.825 71.206 53.49l1532.728-715.09c39.3-18.336 71.2-72.068 71.2-119.928V80.48z" fill="#484646"/><path d="M1825.106 80.48c0-47.85-31.9-71.818-71.2-53.482L221.178 742.088c-39.3 18.335-71.206 72.07-71.206 119.92v173.41c0 47.86 31.906 71.825 71.206 53.49l1532.728-715.09c39.3-18.336 71.2-72.068 71.2-119.928V80.48z" fill="#484646"/><path d="M1843.555 80.48c0-47.85-31.9-71.818-71.2-53.482L239.627 742.088c-39.3 18.335-71.206 72.07-71.206 119.92v173.41c0 47.86 31.907 71.825 71.207 53.49l1532.728-715.09c39.3-18.336 71.2-72.068 71.2-119.928V80.48z" fill="#484646"/><path d="M1862.003 80.48c0-47.85-31.9-71.818-71.2-53.482L258.075 742.088c-39.3 18.335-71.206 72.07-71.206 119.92v173.41c0 47.86 31.905 71.825 71.205 53.49l1532.728-715.09c39.3-18.336 71.2-72.068 71.2-119.928V80.48z" fill="#484646"/><path d="M1880.45 80.48c0-47.85-31.9-71.818-71.2-53.482L276.524 742.088c-39.3 18.335-71.206 72.07-71.206 119.92v173.41c0 47.86 31.906 71.825 71.206 53.49l1532.728-715.09c39.3-18.336 71.2-72.068 71.2-119.928V80.48z" fill="#484646"/><path d="M1898.9 80.48c0-47.85-31.9-71.818-71.2-53.482L294.97 742.088c-39.3 18.335-71.205 72.07-71.205 119.92v173.41c0 47.86 31.906 71.825 71.207 53.49l1532.727-715.09c39.3-18.336 71.2-72.068 71.2-119.928V80.48z" fill="#484646"/><path d="M1917.348 80.48c0-47.85-31.9-71.818-71.2-53.482L313.42 742.088c-39.3 18.335-71.206 72.07-71.206 119.92v173.41c0 47.86 31.906 71.825 71.206 53.49l1532.728-715.09c39.3-18.336 71.2-72.068 71.2-119.928V80.48z" fill="#484646"/><path d="M1935.796 80.48c0-47.85-31.9-71.818-71.2-53.482L331.868 742.088c-39.3 18.335-71.206 72.07-71.206 119.92v173.41c0 47.86 31.906 71.825 71.206 53.49l1532.728-715.09c39.3-18.336 71.2-72.068 71.2-119.928V80.48z" fill="#484646"/><path d="M1954.244 80.48c0-47.85-31.9-71.818-71.2-53.482L350.316 742.088c-39.3 18.335-71.206 72.07-71.206 119.92v173.41c0 47.86 31.906 71.825 71.206 53.49l1532.728-715.09c39.3-18.336 71.2-72.068 71.2-119.928V80.48z" fill="#484646"/><path d="M69.32 1092.142h254.407M1656.45 23.832h254.407" fill="#484646" stroke="#E7E8E9" stroke-width="6.25"/><path d="M830.54 2073.41l107.84 430.07H722.7l107.838-430.07z" fill="#484646" stroke="#484646" stroke-width="8.62" transform="matrix(-1.1311 .56675 .19357 -.9811 1000.9 2952.762)"/><g><path class="aroundStroke" d="M20.834 862.342c0-56.12 32.6-107.12 83.532-130.69C412.176 589.232 1473 98.387 1622.94 29.01c11.65-5.388 24.32-8.18 37.15-8.18h250.61c24.05 0 43.55 19.5 43.55 43.55v184.792c0 55.96-32.43 106.86-83.15 130.51-266.14 124.1-1086.73 506.75-1206.608 562.65-9.447 4.4-16.93 12.15-21.005 21.74-32.67 76.9-180.653 425.21-180.653 425.21l-37.777-326.6c-.22-1.91-1.343-3.61-3.02-4.56-1.676-.96-3.706-1.05-5.466-.26-13.8 6.19-43.457 19.5-62.455 28.02-11.39 5.11-23.734 7.76-36.22 7.76H64.382c-11.55 0-22.626-4.59-30.793-12.76-8.168-8.16-12.756-19.24-12.756-30.79v-187.75z" fill="none" stroke="#FFF7C2" stroke-width="41.67"/></g><g><text x="550.802" y="2732.96" font-family="'AvenirNextCondensed-Regular', 'Avenir Next Condensed', sans-serif" font-stretch="condensed" font-size="266.667" fill="none" transform="matrix(.90833 -.41825 0 1.1009 -327.664 -1804.54)">QUO<tspan x="994.269px 1085.47px" y="2732.96px 2732.96px">TI</tspan>K&apos;S CUBE</text><text x="550.802" y="2732.96" font-family="'AvenirNextCondensed-Regular', 'Avenir Next Condensed', sans-serif" font-stretch="condensed" font-size="266.667" fill="#E7E8E9" stroke="#E7E8E9" stroke-width="14" stroke-linecap="butt" stroke-miterlimit="1.414" transform="matrix(.90833 -.41825 0 1.1009 -327.664 -1804.54)">QUO<tspan x="994.269px 1085.47px" y="2732.96px 2732.96px">TI</tspan>K&apos;S CUBE</text></g></svg>
+  	</div>
+  </div>
+
+  <h1>
+  	<a class="discover" href="#cubeContainer">DISCOVER</a>
+  </h1>
+
+  <!-- MAIN CUBE -->
+
+  <div id='cubeContainer'>
+      <div id='cube' class="cubeTransform">
+          <div class='face front'>
+          	<div class="uniqueFace">
+  		        <p class="quote-text"></p>
+  		        <footer class="quote-author"></footer>
+  	        </div>
+          </div>
+          <div class='face left'>
+          	<div class="uniqueFace">
+  		        <p class="quote-text"></p>
+  		        <footer class="quote-author"></footer>
+  	        </div>
+          </div>
+          <div class='face top'>
+          	<div class="uniqueFace">
+  		        <p class="quote-text"></p>
+  		        <footer class="quote-author"></footer>
+  	        </div>
+          </div>
+          <div class='face bottom'>
+          	<div class="uniqueFace">
+  		        <p class="quote-text"></p>
+  		        <footer class="quote-author"></footer>
+  	        </div>
+          </div>
+          <div class='face right'>
+          	<div class="uniqueFace">
+  		        <p class="quote-text"></p>
+  		        <footer class="quote-author"></footer>
+  	        </div>
+          </div>
+          <div class='face back'>
+          	<div class="uniqueFace">
+  		        <p class="quote-text"></p>
+  		        <footer class="quote-author"></footer>
+  	        </div>
+          </div>
+      </div>    
+  </div>
+
+  <div class="buttons">
+  	<button id="newQuoteButton"><i class="fa fa-quote-right" aria-hidden="true"></i></button>
+  	<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" id="tweet" data-show-count="false">
+  	  <button><i class="fa fa-twitter" aria-hidden="true"></i></button>
+  	</a>
+  </div>
+
+  <div class="footerWrapper">
+    <footer id="footer">Built by <a href="https://codepen.io/SuperChillBertie/full/rzEBYB/">ㅅuperㄷhill designs</a> for <a href="https://www.freecodecamp.org">Free Code Camp</a> &copy;2017</footer>
+  </div>
+
+  <script
+    src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+  <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+  <script type="text/javascript" src="main.js"></script>
+  </body>
+</html>
